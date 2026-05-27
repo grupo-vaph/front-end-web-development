@@ -19,6 +19,9 @@
                 <li><a href="#publico">Público-alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#aplicacao">No dia a dia</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#tema">Tema</a></li>
             </ul>
         </nav>
     </header>
@@ -34,14 +37,22 @@
 
     <main>
 
+        <!-- SLIDESHOW -->
+        <section id="slideshow">
+            <div class="texto">
+                <h2>Monitoramento Visual</h2>
+                <p>Acompanhe imagens do sistema de monitoramento.</p>
+            </div>
+
+            <img id="slide-image" src="./src/assets/hero.jpeg" alt="Slideshow">
+        </section>
+
         <!-- Começo do site -->
         <section id="comeco">
             <div class="texto">
-                <h1>Sentinela de Barragens</h1>
-                <p>Prevemos o rompimento de barragens antes que ele aconteça, cruzando radar de satélite com sensores no
-                    solo.</p>
-                <p>"Não tocou nenhum alarme. Só que o aviso existia. Ele estava no espaço. E ninguém estava olhando."</p>
-                <p>Brumadinho, 25 de janeiro de 2019: 270 vidas perdidas.</p>
+                <h1>Safe Earth</h1>
+                <p>Prevemos o rompimento de barragens antes que ele aconteça.</p>
+                <p>"O aviso existia. Ele estava no espaço."</p>
             </div>
 
             <img src="./src/assets/barragem.jpg" alt="Barragem de rejeitos de mineração">
@@ -51,71 +62,104 @@
         <section id="problema">
             <div class="texto">
                 <h2>Problema</h2>
-                <p>O Brasil tem cerca de 850 barragens de mineração. Muitas não tem monitoramento confiável para prever um
-                    rompimento.</p>
-                <p>Em Brumadinho, o aviso existia mas ninguém viu. O rompimento matou 270 pessoas e era previsível.</p>
+                <p>O Brasil tem cerca de 850 barragens de mineração sem monitoramento adequado.</p>
             </div>
 
             <img src="./src/assets/barragem-rompida.jpg" alt="Barragem de mineração rompida">
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quiz">
+            <div class="texto">
+                <h2>Quiz de Conscientização</h2>
+
+                <p id="quiz-pergunta">Pergunta aqui</p>
+
+                <div id="quiz-opcoes">
+                    <button class="opcao">Opção 1</button>
+                    <button class="opcao">Opção 2</button>
+                    <button class="opcao">Opção 3</button>
+                </div>
+
+                <p id="quiz-resultado"></p>
+            </div>
+        </section>
+
+        <!-- CONTATO / FORMULÁRIO -->
+        <section id="contato">
+            <div class="texto">
+                <h2>Contato</h2>
+
+                <form id="form-contato">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <p id="form-msg"></p>
+            </div>
+        </section>
+
+        <!-- TEMA -->
+        <section id="tema">
+            <div class="texto">
+                <h2>Personalizar Tema</h2>
+
+                <button onclick="setTema('escuro')">Escuro</button>
+                <button onclick="setTema('azul')">Azul</button>
+                <button onclick="setTema('claro')">Claro</button>
+            </div>
         </section>
 
         <!-- Tecnologia -->
         <section id="tecnologia">
             <div class="texto">
                 <h2>Tecnologia</h2>
-                <p>Usamos radar de satélite (InSAR, Sentinel-1), que mede a deformaçãodo solo com precisão de milímtros.</p>
-                <p>Sensores de baixo custo na barragem medem inclinação e umidade. Um programa em Python prevê o colapso.
-                </p>
+                <p>Radar de satélite + sensores no solo + análise preditiva.</p>
             </div>
 
-            <img src="./src/assets/foto.jpeg" alt="Satélite de radar medindo a deformação do solo de uma barragem">
+            <img src="./src/assets/foto.jpeg" alt="Tecnologia de monitoramento">
         </section>
 
         <!-- Objetivos -->
         <section id="objetivos">
             <div class="texto">
                 <h2>Objetivos</h2>
-                <p>Detectar sinais de rompimento com antecedência e transformá-los em um alerta claro, a tempo de evacuar.
-                </p>
-                <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
+                <p>Detectar riscos antes do rompimento e salvar vidas.</p>
             </div>
 
-            <img src="./src/assets/objetivo.png" alt="Sala de controle monitorando uma barragem com alerta de risco em destaque">
+            <img src="./src/assets/objetivo.png" alt="Centro de controle">
         </section>
 
-        <!-- Público Alvo -->
+        <!-- Público -->
         <section id="publico">
             <div class="texto">
                 <h2>Público-Alvo</h2>
-                <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
-                <p>Defesa Civil e comunidades próximas, que recebem o alerta e coordenam a evacuação.</p>
+                <p>Defesa Civil, mineradoras e comunidades próximas.</p>
             </div>
 
-            <img src="./src/assets/engenheiro-segurança.jpg" alt="Engenheiro de segurança em campo">
+            <img src="./src/assets/engenheiro-segurança.jpg" alt="Engenheiro de segurança">
         </section>
 
         <!-- Benefícios -->
         <section id="beneficios">
             <div class="texto">
                 <h2>Benefícios</h2>
-                <p>Aviso com dias de antecedência, salvando vidas. Custo menor que os sistemas tradicionais de
-                monitoramento.</p>
-                <p>Relatórios automáticos de compliance e mais segurança para empresas, trabalhadores e cidades vizinhas.
-                </p>
+                <p>Mais segurança, menos custos e prevenção de tragédias.</p>
             </div>
 
-            <img src="./src/assets/beneficio.png" alt="Cidade protegida no vale abaixo de uma barragem ao entardecer">
+            <img src="./src/assets/beneficio.png" alt="Cidade segura">
         </section>
 
-        <!-- Aplicação no dia a dia -->
+        <!-- Aplicação -->
         <section id="aplicacao">
             <div class="texto">
                 <h2>Aplicação no Dia a Dia</h2>
-                <p>O sistema acompanha a barragem o tempo todo e mostra o nível de risco num painel simples.</p>
-                <p>Quando o risco sobe, dispara um alerta automático para a equipe e a Defesa Civil agirem.</p>
+                <p>Monitoramento contínuo com alertas automáticos.</p>
             </div>
 
-            <img src="./src/assets/aplicacao.png" alt="Aplicativo Safe Earth mostrando o nível de risco da barragem em tempo real">
+            <img src="./src/assets/aplicacao.png" alt="App de monitoramento">
         </section>
 
     </main>
@@ -132,30 +176,19 @@
             <div class="footer-info">
                 <h3>Integrantes</h3>
                 <ul>
-                    <li>Enzo Gabriel Pereira — RM: 570659</li>
-                    <li>Henrique Giusti de Souza — RM: 570766</li>
-                    <li>Pedro Henrique Moura Aguiar — RM: 570715</li>
-                    <li>Pietro Alexandre Guerato — RM: 571232</li>
-                    <li>Victor Ulisses de Morais Silva — RM: 572634</li>
+                    <li>Enzo Gabriel Pereira</li>
+                    <li>Henrique Giusti de Souza</li>
+                    <li>Pedro Henrique Moura Aguiar</li>
+                    <li>Pietro Alexandre Guerato</li>
+                    <li>Victor Ulisses de Morais Silva</li>
                 </ul>
             </div>
 
-            <div class="footer-info">
-                <h3>Navegação</h3>
-                <a href="#inicio">Início</a>
-                <a href="#problema">Problema</a>
-                <a href="#tecnologia">Tecnologia</a>
-                <a href="#objetivos">Objetivos</a>
-                <a href="#publico">Público-alvo</a>
-                <a href="#beneficios">Benefícios</a>
-                <a href="#aplicacao">No dia a dia</a>
-            </div>
         </div>
 
-        <!-- linhapara dividir as informações do copyright -->
         <div class="footer-divider"></div>
 
-        <p class="footer-bottom">&copy; 2026 <span>Safe Earth</span> — Todos os direitos reservados</p>
+        <p class="footer-bottom">&copy; 2026 <span>Safe Earth</span></p>
     </footer>
 
     <script src="./src/js/script.js"></script>
