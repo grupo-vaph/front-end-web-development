@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <a href="#inicio"><img src="" alt="Logo"></a>
+            <a href="#inicio">Safe Earth</a>
             <ul>
                 <li><a href="#problema">Problema</a></li>
                 <li><a href="#tecnologia">Tecnologia</a></li>
@@ -23,82 +23,99 @@
         </nav>
     </header>
 
-    <main id="inicio">
-
-        <!-- Hero -->
-        <div id="hero">
-            <h1 id="titulo">Motor Nimbus</h1>
-            <img src="" alt="Logo Safe Earth" id="imgHero">
+    <!-- Hero -->
+    <div class="hero" id="inicio">
+        <img src="./src/assets/hero.jpeg" alt="Vista aérea noturna de uma barragem monitorada por um satélite em órbita">
+        <div class="hero-texto">
+            <h1>O próximo rompimento pode ser evitado.</h1>
+            <p>Monitoramos barragens por satélite para alertar antes que seja tarde.</p>
         </div>
+    </div>
+
+    <main>
 
         <!-- Começo do site -->
         <section id="comeco">
-            <h1>Sentinela de Barragens</h1>
-            <p>Prevemos o rompimento de barragens antes que ele aconteça — cruzando radar de satélite com sensores no
-                solo.</p>
-            <p>"Não tocou nenhum alarme. Só que o aviso existia. Ele estava no espaço. E ninguém estava olhando."</p>
-            <p>Brumadinho, 25 de janeiro de 2019 — 270 vidas perdidas.</p>
+            <div class="texto">
+                <h1>Sentinela de Barragens</h1>
+                <p>Prevemos o rompimento de barragens antes que ele aconteça, cruzando radar de satélite com sensores no
+                    solo.</p>
+                <p>"Não tocou nenhum alarme. Só que o aviso existia. Ele estava no espaço. E ninguém estava olhando."</p>
+                <p>Brumadinho, 25 de janeiro de 2019: 270 vidas perdidas.</p>
+            </div>
 
             <img src="./src/assets/barragem.jpg" alt="Barragem de rejeitos de mineração">
         </section>
 
         <!-- Problema -->
         <section id="problema">
-            <h2>Problema</h2>
-            <p>O Brasil tem cerca de 850 barragens de mineração. Muitas não tem monitoramento confiável para prever um
-                rompimento.</p>
-            <p>Em Brumadinho, o aviso existia mas ninguém viu. O rompimento matou 270 pessoas e era previsível.</p>
+            <div class="texto">
+                <h2>Problema</h2>
+                <p>O Brasil tem cerca de 850 barragens de mineração. Muitas não tem monitoramento confiável para prever um
+                    rompimento.</p>
+                <p>Em Brumadinho, o aviso existia mas ninguém viu. O rompimento matou 270 pessoas e era previsível.</p>
+            </div>
 
             <img src="./src/assets/barragem-rompida.jpg" alt="Barragem de mineração rompida">
         </section>
 
         <!-- Tecnologia -->
         <section id="tecnologia">
-            <h2>Tecnologia</h2>
-            <p>Usamos radar de satélite (InSAR, Sentinel-1), que mede a deformaçãodo solo com precisão de milímtros.</p>
-            <p>Sensores de baixo custo na barragem medem inclinação e umidade. Um programa em Python prevê o colapso.
-            </p>
+            <div class="texto">
+                <h2>Tecnologia</h2>
+                <p>Usamos radar de satélite (InSAR, Sentinel-1), que mede a deformaçãodo solo com precisão de milímtros.</p>
+                <p>Sensores de baixo custo na barragem medem inclinação e umidade. Um programa em Python prevê o colapso.
+                </p>
+            </div>
 
-            <img src="./src/assets/satelite.jfif" alt="Satélite monitorando o solo da Terra">
+            <img src="./src/assets/foto.jpeg" alt="Satélite de radar medindo a deformação do solo de uma barragem">
         </section>
 
         <!-- Objetivos -->
         <section id="objetivos">
-            <h2>Objetivos</h2>
-            <p>Detectar sinais de rompimento com antecedência e transformá-los em um alerta claro, a tempo de evacuar.
-            </p>
-            <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
+            <div class="texto">
+                <h2>Objetivos</h2>
+                <p>Detectar sinais de rompimento com antecedência e transformá-los em um alerta claro, a tempo de evacuar.
+                </p>
+                <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
+            </div>
 
-            <img src="./src/assets/painel-monitoramento.jpeg" alt="Painel de alerta de risco">
+            <img src="./src/assets/objetivo.png" alt="Sala de controle monitorando uma barragem com alerta de risco em destaque">
         </section>
 
         <!-- Público Alvo -->
         <section id="publico">
-            <h2>Público-Alvo</h2>
-            <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
-            <p>Defesa Civil e comunidades próximas, que recebem o alerta e coordenam a evacuação.</p>
+            <div class="texto">
+                <h2>Público-Alvo</h2>
+                <p>Tornar o monitoramento acessível e ajudar mineradoras a cumprir a lei de segurança de barragens.</p>
+                <p>Defesa Civil e comunidades próximas, que recebem o alerta e coordenam a evacuação.</p>
+            </div>
 
             <img src="./src/assets/engenheiro-segurança.jpg" alt="Engenheiro de segurança em campo">
         </section>
 
         <!-- Benefícios -->
         <section id="beneficios">
-            <h2>Benefícios</h2>
-            <p>Aviso com dias de antecedência, salvando vidas. Custo menor que os sistemas tradicionais de
-            monitoramento.</p>
-            <p>Relatórios automáticos de compliance e mais segurança para empresas, trabalhadores e cidades vizinhas.
-            </p>
+            <div class="texto">
+                <h2>Benefícios</h2>
+                <p>Aviso com dias de antecedência, salvando vidas. Custo menor que os sistemas tradicionais de
+                monitoramento.</p>
+                <p>Relatórios automáticos de compliance e mais segurança para empresas, trabalhadores e cidades vizinhas.
+                </p>
+            </div>
 
-            <img src="./src/assets/beneficio-seguranca-economia.jpg" alt="Benefícios de segurança e economia">
+            <img src="./src/assets/beneficio.png" alt="Cidade protegida no vale abaixo de uma barragem ao entardecer">
         </section>
 
         <!-- Aplicação no dia a dia -->
         <section id="aplicacao">
-            <h2>Aplicação no Dia a Dia</h2>
-            <p>O sistema acompanha a barragem o tempo todo e mostra o nível de risco num painel simples.</p>
-            <p>Quando o risco sobe, dispara um alerta automático para a equipe e a Defesa Civil agirem.</p>
+            <div class="texto">
+                <h2>Aplicação no Dia a Dia</h2>
+                <p>O sistema acompanha a barragem o tempo todo e mostra o nível de risco num painel simples.</p>
+                <p>Quando o risco sobe, dispara um alerta automático para a equipe e a Defesa Civil agirem.</p>
+            </div>
 
-            <img src="./src/assets/app-risco.jpg" alt="Aplicativo mostrando o nível de risco">
+            <img src="./src/assets/aplicacao.png" alt="Aplicativo Safe Earth mostrando o nível de risco da barragem em tempo real">
         </section>
 
     </main>
@@ -138,7 +155,7 @@
         <!-- linhapara dividir as informações do copyright -->
         <div class="footer-divider"></div>
 
-        <p class="footer-bottom">&copy; 2026 <span>Sentinela de Barragens</span> — Todos os direitos reservados</p>
+        <p class="footer-bottom">&copy; 2026 <span>Safe Earth</span> — Todos os direitos reservados</p>
     </footer>
 
     <script src="./src/js/script.js"></script>
