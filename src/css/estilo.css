@@ -89,6 +89,7 @@ nav ul li a:hover {
 .tema {
     width: 50px;
     height: 50px;
+    margin-right: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,8 +248,9 @@ section:target h2 {
     flex-direction: column;
 }
 #pergunta {
-    font-size: 22px;
-    margin: 20px 0;
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 #opcoes {
     display: flex;
@@ -256,6 +258,9 @@ section:target h2 {
     gap: 16px;
 }
 #opcoes button {
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
+    line-height: 1.4;
     min-width: 180px;
     padding: 12px 20px;
     background: var(--fundo-card);
@@ -270,6 +275,9 @@ section:target h2 {
     transform: translateY(-3px);
 }
 #resultado {
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
+    line-height: 1.4;
     margin-top: 24px;
     font-size: 20px;
     color: var(--destaque);
@@ -313,6 +321,9 @@ section:target h2 {
 #mensagem-form {
     margin-top: 16px;
     color: var(--texto-suave);
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
 /* Rodape */
@@ -414,6 +425,10 @@ footer {
 
     #opcoes {
         justify-content: center;
+    }
+    
+    .tema{
+        margin-right: 150px;
     }
 
     
