@@ -1,3 +1,27 @@
+// HERO
+const heroTexto = document.querySelector(".hero-texto");
+
+const hero = document.querySelector(".hero");
+
+window.addEventListener("load", function() {
+
+    heroTexto.classList.add("ativo");
+
+    setTimeout(function() {
+
+        hero.classList.add("sumir");
+
+    }, 4000);
+
+    setTimeout(function() {
+
+        hero.style.display = "none";
+
+    }, 5500);
+
+});
+
+
 // TEMA
 const tema = document.querySelector(".tema");
 
@@ -227,3 +251,30 @@ function mostrarResultado() {
 }
 
 carregarPergunta();
+
+// SLIDESHOW
+
+const slide = document.getElementById("slide-image");
+
+const imagens = [
+    "./src/assets/hero.jpeg",
+    "./src/assets/barragem.jpg",
+    "./src/assets/barragem-rompida.jpg"
+];
+
+let slideAtual = 0;
+
+function trocarSlide() {
+
+    slideAtual++;
+
+    if (slideAtual >= imagens.length) {
+        slideAtual = 0;
+    }
+
+    slide.src = imagens[slideAtual];
+}
+
+setInterval(trocarSlide, 3000);
+
+
