@@ -20,6 +20,10 @@
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#aplicacao">No dia a dia</a></li>
             </ul>
+
+             <!-- TROCA DE TEMA -->
+            <div class="tema" onclick="trocarTema()">🌙</div>
+
         </nav>
     </header>
 
@@ -31,6 +35,15 @@
             <p>Monitoramos barragens por satélite para alertar antes que seja tarde.</p>
         </div>
     </div>
+
+    <!-- SLIDESHOW -->
+        <section id="slideshow">
+        <div class="texto">
+            <h2>Monitoramento Visual</h2>
+            <p>Acompanhe imagens do sistema Safe Earth.</p>
+        </div>
+            <img id="slide-image" src="./src/assets/hero.jpeg" alt="Slideshow">
+        </section>
 
     <main>
 
@@ -116,6 +129,36 @@
             </div>
 
             <img src="./src/assets/aplicacao.png" alt="Aplicativo Safe Earth mostrando o nível de risco da barragem em tempo real">
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quiz">
+            <div class="texto">
+                <h2>Quiz de Conscientização</h2>
+                <p id="pergunta"></p>
+
+            <div id="opcoes"></div>
+
+            <p id="resultado"></p>
+
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section id="formulario">
+            <div class="texto">
+                <h2>Entre em contato</h2>
+
+                <form id="form-contato">
+
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+                </form>
+                <p id="mensagem-form"></p>
+            </div>
         </section>
 
     </main>
