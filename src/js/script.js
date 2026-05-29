@@ -254,27 +254,55 @@ carregarPergunta();
 
 // SLIDESHOW
 
-const slide = document.getElementById("slide-image");
+const slideTitulo = document.getElementById("slide-titulo");
+const slideImagem = document.getElementById("slide-image");
 
-const imagens = [
-    "./src/assets/hero.jpeg",
-    "./src/assets/barragem.jpg",
-    "./src/assets/barragem-rompida.jpg"
+const slides = [
+
+    {
+        titulo: "O perigo começa com pequenos sinais.",
+        imagem: "./src/assets/barragem.png"
+    },
+
+    {
+        titulo: "Cada segundo de antecipação salva vidas.",
+        imagem: "./src/assets/barragem_agua.png"
+    },
+
+    {
+        titulo: "Prever tragédias é possível.",
+        imagem: "./src/assets/monitoramento.png"
+    }
+
 ];
 
 let slideAtual = 0;
 
-function trocarSlide() {
+function mostrarSlide() {
+    slideTitulo.textContent = slides[slideAtual].titulo;
+    slideImagem.src = slides[slideAtual].imagem;
+}
+
+function proximoSlide() {
 
     slideAtual++;
 
-    if (slideAtual >= imagens.length) {
+    if (slideAtual >= slides.length) {
         slideAtual = 0;
     }
 
-    slide.src = imagens[slideAtual];
+    mostrarSlide();
 }
 
-setInterval(trocarSlide, 3000);
+function voltarSlide() {
 
+    slideAtual--;
 
+    if (slideAtual < 0) {
+        slideAtual = slides.length - 1;
+    }
+
+    mostrarSlide();
+}
+
+mostrarSlide();
