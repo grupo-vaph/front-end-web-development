@@ -1,15 +1,90 @@
-<h1><strong>HTML</strong></h1>
+<h2><strong>Detalhamento — IA utilizada: ChatGPT</strong></h2>
 
-- Auxílio na criação da estrutura HTML das novas funcionalidades do site;
+**Botões de navegação do slideshow**
 
-<h1><strong>CSS</strong></h1>
+- Solicitado: Posicionamento dos botões de navegação nas laterais da seção;
+- Retornado: Sugestão de posicionamento absoluto com alinhamento às extremidades esquerda e direita da section;
+- Alterado/rejeitado: Os botões receberam fundo transparente para melhor integração com o design do projeto;
 
-- Auxílio na estilização das novas funcionalidades do site;
-- Estilização do slideshow, quiz, formulário e troca de tema;
-- Criação de botões modernos e transparentes para navegação;
-- Implementação de efeitos hover e transições suaves;
-- Ajustes de responsividade para dispositivos móveis;
-- Implementação de animações suaves no hero da página;
+**Quiz de conscientização**
+
+- Solicitado: Ajuda na construção e na lógica do quiz;
+- Retornado: Estrutura HTML, dicas e lógica JavaScript utilizando arrays, eventos e manipulação do DOM;
+- Alterado/rejeitado: Algumas perguntas foram substituídas para melhor alinhamento com a proposta do projeto;
+
+**Formulário de contato**
+
+- Solicitado: Implementação de um formulário contendo campos para nome, e-mail e mensagem;
+- Retornado: Estrutura HTML;
+- Alterado/rejeitado: Sugestão aceita sem alterações relevantes;
+
+**Troca de tema**
+
+- Solicitado: Implementação de um sistema de alternância de temas visuais no site;
+- Retornado: Sugestão de utilização de variáveis CSS alteradas dinamicamente por JavaScript;
+- Alterado/rejeitado: A proposta inicial com múltiplos botões foi substituída por um único botão que alterna os temas em sequência;
+
+**Responsividade das novas funcionalidades**
+
+- Solicitado: Adaptação do slideshow, quiz, formulário e troca de tema para dispositivos móveis;
+- Retornado: Sugestões de media queries e reorganização dos elementos em telas menores;
+- Alterado/rejeitado: Sugestões aceitas com pequenos ajustes de espaçamento e alinhamento;
+
+**Estilização do slideshow**
+
+- Solicitado: Criação de uma aparência moderna e compatível com a identidade visual do projeto;
+- Retornado: Sugestão de utilização de Flexbox, espaçamentos, bordas arredondadas e transições suaves;
+- Alterado/rejeitado: Posteriormente foram adicionados efeitos visuais aos botões de navegação;
+
+**Estilização do quiz**
+
+- Solicitado: Melhorar a aparência visual do quiz mantendo a identidade do projeto;
+- Retornado: Sugestão de utilização de Flexbox, botões personalizados e espaçamentos padronizados;
+- Alterado/rejeitado: Ajustes adicionais de fonte e alinhamento foram realizados posteriormente;
+
+**Estilização do formulário**
+
+- Solicitado: Criação de uma interface moderna e compatível com a identidade visual do projeto;
+- Retornado: Sugestão de campos escuros, bordas suaves, cantos arredondados e botão destacado;
+- Alterado/rejeitado: Sugestão aceita sem alterações significativas;
+
+**Animações do hero**
+
+- Solicitado: Orientações para implementação de animações visuais na seção hero;
+- Retornado: Sugestões de animações de entrada e desaparecimento utilizando CSS e JavaScript;
+- Alterado/rejeitado: Parte das sugestões foi utilizada como referência durante o desenvolvimento;
+
+**Frases de impacto para o slideshow**
+
+- Solicitado: Criação de frases curtas e impactantes relacionadas à prevenção de desastres em barragens;
+- Retornado: Diversas sugestões alinhadas à proposta do projeto;
+- Alterado/rejeitado: Foram selecionadas as frases "O perigo começa com pequenos sinais.", "Cada segundo de antecipação salva vidas." e "Prever tragédias é possível.";
+
+<h1><strong>IMAGENS</strong></h1> <h2><strong>IA utilizada: ChatGPT</strong></h2>
+
+**Slideshow — Imagem 1**
+
+- Solicitado: "Barragem moderna monitorada por tecnologia avançada, vista aérea ampla, estrutura robusta cercada por vegetação, atmosfera séria e profissional, estilo fotográfico realista, alta resolução, sem texto, cores azul-marinho e dourado, tema tecnológico relacionado à prevenção de desastres.";
+- Retornado: Geração de imagem alinhada à identidade visual e tecnológica do projeto;
+- Alterado/rejeitado: Imagem utilizada como gerada, sem edição;
+
+**Slideshow — Imagem 2**
+
+- Solicitado: "Centro de monitoramento tecnológico analisando dados de uma barragem em tempo real, grandes telas exibindo gráficos e alertas de risco, ambiente moderno, iluminação azul, estilo fotográfico realista, alta resolução, sem texto.";
+- Retornado: Geração de imagem alinhada à identidade visual e tecnológica do projeto;
+- Alterado/rejeitado: Imagem utilizada como gerada, sem edição;
+
+**Slideshow — Imagem 3**
+
+- Solicitado: "Barragem monitorada por satélites e sensores inteligentes, representação visual da prevenção de desastres, ambiente seguro, tecnologia avançada, estilo fotográfico realista, alta resolução, sem texto, atmosfera futurista.";
+- Retornado: Geração de imagem alinhada à identidade visual e tecnológica do projeto;
+- Alterado/rejeitado: Imagem utilizada como gerada, sem edição;
+
+**Imagem adicional — Barragem**
+
+- Solicitado: "Barragem de mineração de grande porte vista ao amanhecer, estrutura detalhada, água refletindo a luz do sol, montanhas ao fundo, estilo fotográfico ultrarrealista, alta resolução, sem pessoas, sem texto e sem marca d'água.";
+- Retornado: Geração de imagem alinhada à identidade visual e tecnológica do projeto;
+- Alterado/rejeitado: Imagem utilizada como gerada, sem edição;
 
 <h2><strong>Detalhamento — IA utilizada: Claude</strong></h2>
 
@@ -57,14 +132,3 @@
 - Retornado: Geração da imagem dentro do esperado;
 - Alterado/rejeitado: Imagem utilizada como gerada, sem edição;
 
-<h1><strong>JS</strong></h1>
-
-- Implementação da lógica do slideshow;
-- Criação da navegação com botões de próximo e anterior;
-- Alteração dinâmica de imagens, títulos e conteúdos do slideshow;
-- Auxílio e dicas no desenvolvimento do quiz com perguntas e resultado final;
-- Auxílio e dicas na troca de temas utilizando variáveis CSS;
-- Explicações sobre arrays, funções, eventos e manipulação do DOM;
-- Auxílio na criação de animações e interações visuais;
-- Correção de erros encontrados durante o desenvolvimento;
-- Apoio no aprendizado e organização da lógica das funcionalidades do projeto.
