@@ -139,6 +139,29 @@ main {
     margin-left: 50px;
 }
 
+.indicadores {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}   
+
+.ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ponto.ativo {
+    background: var(--destaque);
+    transform: scale(1.2);
+}
+
 
 /* SETAS */
 

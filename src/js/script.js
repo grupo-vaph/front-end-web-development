@@ -264,11 +264,23 @@ const slides = [
 
 ];
 
+const pontosSlide = document.querySelectorAll(".ponto");
+
 let slideAtual = 0;
+
+function atualizarPontos() {
+    pontosSlide.forEach((ponto) => {
+        ponto.classList.remove("ativo");
+    });
+
+    pontosSlide[slideAtual].classList.add("ativo");
+}
 
 function mostrarSlide() {
     slideTitulo.textContent = slides[slideAtual].titulo;
     slideImagem.src = slides[slideAtual].imagem;
+
+    atualizarPontos();
 }
 
 function proximoSlide() {
@@ -293,4 +305,14 @@ function voltarSlide() {
     mostrarSlide();
 }
 
+function irParaSlide(indice) {
+    slideAtual = indice;
+    mostrarSlide();
+}
+
 mostrarSlide();
+
+// Troca automática a cada 5 segundos
+setInterval(function () {
+    proximoSlide();
+}, 5000);
