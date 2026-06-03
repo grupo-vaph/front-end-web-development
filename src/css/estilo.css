@@ -23,6 +23,10 @@
     --fonte-texto: 'Inter', sans-serif;
 }
 
+html {
+     scroll-behavior: smooth; /* define como a página deve rolar quando ocorre uma navegação interna */
+}
+
 /* Base */
 body {
     background-color: var(--fundo);
@@ -263,6 +267,7 @@ section {
     border: 1px solid var(--borda);
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+     scroll-margin-top: 260px; /* define um espaço de 100 pixels acima de um elemento quando ele é alcançado por uma rolagem automática */
 }
 
 /* Inverte o lado da imagem nas seccoes pares */
