@@ -6,19 +6,7 @@ const hero = document.querySelector(".hero");
 window.addEventListener("load", function() {
 
     heroTexto.classList.add("ativo");
-
-    setTimeout(function() {
-
-        hero.classList.add("sumir");
-
-    }, 4000);
-
-    setTimeout(function() {
-
-        hero.style.display = "none";
-
-    }, 5500);
-
+    
 });
 
 
